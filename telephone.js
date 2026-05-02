@@ -18,7 +18,7 @@ class Telephone {
 
   dialPhoneNumber(phoneNumber) {
     if (!this.phoneNumbers.includes(phoneNumber)) {
-      throw new Error(`Phone number ${phoneNumber} was not added and cannot be dialled.`);
+      throw new Error(`Phone number ${phoneNumber} was not added and cannot be dialed.`);
     }
     this.notifyObservers(phoneNumber);
   }
