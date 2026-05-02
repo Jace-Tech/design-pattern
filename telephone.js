@@ -25,7 +25,7 @@ class Telephone {
 
   addObserver(observer) {
     if (!(observer instanceof Observer)) {
-      throw new Error('Observer must extend the Observer base class');
+      throw new TypeError('Observer must extend the Observer base class');
     }
     if (!this.observers.includes(observer)) {
       this.observers.push(observer);
